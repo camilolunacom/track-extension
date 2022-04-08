@@ -13,7 +13,7 @@ function createWrapper (link) {
   return wrapper;
 }
 
-// Selectors here are madness, it works for as of Dec 4th 2019
+// Selectors here are madness, it works for as of Apr 8th 2022
 // Button renders in popup/dialog view
 togglbutton.render(
   '.notion-peek-renderer:not(.toggl)',
@@ -33,7 +33,7 @@ togglbutton.render(
 
     const root = elem.querySelector('div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3)');
     if (root) {
-      root.prepend(wrapper);
+      root.before(wrapper);
     }
   }
 );
